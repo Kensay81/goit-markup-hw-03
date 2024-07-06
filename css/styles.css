@@ -13,6 +13,30 @@
     --dairy: #fcfcfc;
 }   
 
+.container {
+    width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+.direction-column {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
 body { 
     font-family: "Roboto", sans-serif;
     color: var(--slate);
@@ -23,8 +47,11 @@ a {
     text-decoration: none;
 }
 
+
 ul,ol {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .logo {
@@ -35,6 +62,7 @@ ul,ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris);
+    margin-right: 76px;
 }
 
 .logo-part {
@@ -47,19 +75,37 @@ ul,ol {
     color: var(--navy-blue);
 }
 
+.navigation {
+    display: flex;
+    align-items: center;    
+}
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+
 .nav-link {
     color: var(--navy-blue);
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
     letter-spacing: 0.02em;
+    padding: 24px 0;
+    display: block;
 }
 
 .nav-link:hover, .nav-link:focus {
     color: #404BBF;
 }
+
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .address-link {
@@ -78,12 +124,12 @@ ul,ol {
 }
 
 .esol-head {
-
     font-size: 56px;
     line-height: 107%;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
+    padding-top: 188px;
 }
 
 .esol-button {
@@ -93,6 +139,10 @@ ul,ol {
     cursor: pointer;
     color: #FFFFFF;
     background: var(--iris);
+    padding: 16px 32px;
+    margin-top: 48px;
+    margin-bottom: 188px;
+    border-radius: 4px;
 }
 
 .esol-button:hover, .esol-button:focus {
@@ -104,9 +154,13 @@ ul,ol {
 
 .about-head {}
 
-.about-list {}
+.about-list {
+    margin: 120px 0;
+}
 
-.about-item {}
+.about-item {
+    margin-right: 24px;
+}
 
 .about-subtitle {
     font-weight: 500;
@@ -123,6 +177,7 @@ ul,ol {
 
 .team {
     background: var(--cloud);
+    padding: 120px 0;
 }
 
 .team-head {
@@ -140,8 +195,8 @@ ul,ol {
 }
 
 .team-item {
-
     background: var(--white);
+    text-align: center;
 }
 
 .team-img {}
