@@ -11,10 +11,14 @@
     --grey: rgba(46, 47, 66, 0.7);
     --white: #fff;
     --dairy: #fcfcfc;
-}   
+} 
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
 
 .container {
-    width: 1152px;
+    width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -121,6 +125,7 @@ ul,ol {
 
 .esol {
     background: var(--navy-blue);
+    padding: 188px 0;
 }
 
 .esol-head {
@@ -129,7 +134,6 @@ ul,ol {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
-    padding-top: 188px;
 }
 
 .esol-button {
@@ -141,8 +145,8 @@ ul,ol {
     background: var(--iris);
     padding: 16px 32px;
     margin-top: 48px;
-    margin-bottom: 188px;
     border-radius: 4px;
+    border: none;
 }
 
 .esol-button:hover, .esol-button:focus {
@@ -150,16 +154,30 @@ ul,ol {
     background: var(--ocean);
 }
 
-.about {}
+.about {
+    padding: 120px 0;
+}
 
 .about-head {}
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .about-list {
-    margin: 120px 0;
+    gap: 24px;
 }
 
 .about-item {
-    margin-right: 24px;
+    width: calc((100% - 72px) / 4)
 }
 
 .about-subtitle {
@@ -168,6 +186,7 @@ ul,ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .about-text {
@@ -188,6 +207,7 @@ ul,ol {
     text-transform: capitalize;
     text-align: center;
     color: var(--navy-blue);
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -197,9 +217,12 @@ ul,ol {
 .team-item {
     background: var(--white);
     text-align: center;
+    width: calc((100% - 72px) / 4)
 }
 
-.team-img {}
+.team-img {
+    margin: 0 16px 32px 16px;
+}
 
 .team-subtitle {
     font-weight: 500;
@@ -208,6 +231,7 @@ ul,ol {
     text-transform: capitalize;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    margin: 0 3px 8px 3px;
 }
 
 .team-text {
@@ -216,6 +240,7 @@ ul,ol {
     line-height: 150%;
     letter-spacing: 0.02em;
     color: var(--slate);
+    margin-bottom: 32px;
 }
 
 .portfolio {
