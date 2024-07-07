@@ -246,7 +246,7 @@ ul,ol {
 
 .portfolio {
     background: var(--white);
-    padding: 120px;
+    padding: 120px 0;
 }
 
 .portfolio-head {
