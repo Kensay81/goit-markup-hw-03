@@ -23,10 +23,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 auto;
 }
 
-.img {
-    display: block;
-}
-
 .flex {
     display: flex;
 }
@@ -48,7 +44,7 @@ h1, h2, h3, h4, h5, h6, p {
 body { 
     font-family: "Roboto", sans-serif;
     color: var(--slate);
-    background: #ffff
+    background: #ffff;
 }
 
 a {
@@ -152,7 +148,7 @@ ul,ol {
     margin-top: 48px;
     border-radius: 4px;
     border: none;
-    min-width: 169px
+    min-width: 169px;
 }
 
 .esol-button:hover, .esol-button:focus {
@@ -183,7 +179,7 @@ ul,ol {
 }
 
 .about-item {
-    width: calc((100% - 72px) / 4)
+    width: calc((100% - 72px) / 4);
 }
 
 .about-subtitle {
@@ -228,7 +224,9 @@ ul,ol {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {}
+.team-img {
+    display: block;
+}
 
 .team-member {
     padding: 32px 0;
@@ -285,7 +283,9 @@ ul,ol {
     width: calc((100% - 48px) / 3);
 }
 
-.portfolio-img {}
+.portfolio-img {
+    display: block;
+}
 
 .portfolio-subtitle {
     font-weight: 500;
