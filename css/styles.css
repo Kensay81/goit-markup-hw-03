@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 auto;
 }
 
+.img {
+    display: block;
+}
+
 .flex {
     display: flex;
 }
@@ -311,9 +315,11 @@ ul,ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--cloud);
+}
+
+.footerlogo {
     display: inline-block;
     margin-bottom: 16px;
-
 }
 
 .foot-text {
